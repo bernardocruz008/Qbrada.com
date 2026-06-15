@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+header, h1, h2, .accordion-header {
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+header {
+    padding: 60px 20px;
+    text-align: center;
+    color: #ffffff; 
+    background-color: #004F6E; 
+    border-bottom: 4px solid #F28226; 
+    background-image: url(/img/Q\ Brada\ Marca\ e\ Grafismo-02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+nav {
+    margin: 0 15px;
+    background-color: #004F6E; 
+    padding: 12px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;          
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffffff;
+    background-color: #F28226;
+    border-radius: 5px;
+}
+
+main {
+    width: 60%;
+    margin: 20px auto;
+    background-color: rgba(0, 79, 110, 0.3); 
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    color: #004F6E; 
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 300px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+
+.card-conteudo {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    font-size: 20px;
+    
+}
+
+.btn {
+    display: grid;
+    background-color: #004F6E; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #004F6E; 
+}
+
+.accordion-container {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.accordion-item {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 79, 110, 0.2);
+    border-radius: 5px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.accordion-header {
+    background-color: #F28226;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-header::after {
+    content: '▶';
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+
+.accordion-item[open] .accordion-header {
+    background-color: #004F6E;
+}
+
+.accordion-item[open] .accordion-header::after {
+    transform: rotate(90deg); 
+}
+
+.accordion-content {
+    padding: 20px;
+    background-color: #fafafa;
+    border-top: 1px solid rgba(0, 79, 110, 0.1);
+    color: #333333;
+    line-height: 1.6;
+}
+
+footer {
+    font-size: 14px;
+    background-color: #004F6E;
+    color: #ffffff; 
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #F28226;
+}
+
+.box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 79, 110, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.box .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #F28226;
+}
+
+.box .btn:hover {
+    background-color: #bd5601;
+}
+
+
+
